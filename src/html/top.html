@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>goofy gophers</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <script src="js/scripts.js"></script>
+  </body>
+  <div id="id"></div>
+  <div id="time">Time: 10</div>
+  <div id="myModal" class="modal-background">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeModal()">&times;</span>
+      <p>Ready? Start!</p>
+      <!-- ボタンをクリックしたらゲームを開始 -->
+      <button onclick="startGame()">Start</button> 
+    </div>
+  </div>
+  <!-- Game End Modal -->
+  <div id="endModal" class="modal-background">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeEndModal()">&times;</span>
+      <p id="finalScore">Your final score: 0</p>
+      <!-- 再チャレンジまたは終了のオプション -->
+      <button onclick="restartGame()">Play Again</button>
+      <button onclick="quitGame()">Quit</button>
+    </div>
+  </div>
+</html>
